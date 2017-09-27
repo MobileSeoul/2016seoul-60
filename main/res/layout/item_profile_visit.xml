@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/tab_contain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.dudco.ovs_seoulappcompetition.Views.CustomProfileCardView
+        android:id="@+id/profile_visit_tab"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"/>
+</LinearLayout>

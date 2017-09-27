@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/review_mcontain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6e6e6"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:padding="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="14dp">
+            <ImageView
+                android:id="@+id/review_writer_image"
+                android:layout_width="75dp"
+                android:layout_height="75dp"/>
+            <LinearLayout
+                android:layout_alignRight="@id/review_writer_image"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="10dp"
+                android:gravity="center">
+                <com.example.dudco.ovs_seoulappcompetition.Views.CustomTextView
+                    android:id="@+id/review_writer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:font="nanumbarungothic_bold_0.ttf"
+                    android:text="유나킴"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_marginBottom="7dp"/>
+                <com.example.dudco.ovs_seoulappcompetition.Views.CustomTextView
+                    android:id="@+id/review_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:font="nanumbarungothic_0.ttf"
+                    android:text="2016년 10월 22일"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <com.example.dudco.ovs_seoulappcompetition.Views.CustomTextView
+            android:id="@+id/review_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="석양이 진다... 서울에도 이렇게 아름다운 석양이 지네요! 다들 한번씩 구경와보세요! 북촌한옥마을~!"
+            app:font="nanumbarungothic_bold_0.ttf"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:layout_marginBottom="15dp"/>
+        <ImageView
+            android:id="@+id/review_image"
+            android:layout_width="match_parent"
+            android:layout_height="250dp" />
+    </LinearLayout>
+</LinearLayout>

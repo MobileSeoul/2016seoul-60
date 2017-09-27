@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6e6e6"
+    android:id="@+id/coordinator">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout">
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar_main"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/intro_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_action_back"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="8dp"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_search_white_36dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="8dp"/>
+
+                <com.example.dudco.ovs_seoulappcompetition.Views.CustomTextView
+                    android:id="@+id/bar_text_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Introduction"
+                    app:font="somatic-rounded.otf"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    android:textColor="@color/white"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true" />
+            </RelativeLayout>
+        </android.support.design.widget.AppBarLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:src="@drawable/introduction_bg"
+            android:scaleType="centerCrop"
+            android:id="@+id/intro_bg" />
+
+        <ScrollView
+            android:id="@+id/intro_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/review_contain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp">
+
+                <RelativeLayout
+                    android:id="@+id/intro_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/white"
+                    android:padding="20dp">
+
+
+                    <com.example.dudco.ovs_seoulappcompetition.Views.CustomTextView
+                        android:id="@+id/intro_subtitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:font="nanumbarungothic_bold_0.ttf"
+                        android:text="Dongdaemun Market"
+                        android:textSize="13sp"
+                        android:layout_below="@+id/intro_title"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginBottom="5dp" />
+                    <LinearLayout
+                        android:id="@+id/intro_star"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_below="@+id/intro_subtitle"
+                        android:layout_alignParentStart="true">
+                        <ImageView
+                            android:layout_width="17dp"
+                            android:layout_height="17dp"
+                            android:src="@drawable/ic_star_nonfill"/>
+                        <ImageView
+                            android:layout_width="17dp"
+                            android:layout_height="17dp"
+                            android:src="@drawable/ic_star_nonfill"
+                            android:layout_marginStart="-2dp"/>
+                        <ImageView
+                            android:layout_width="17dp"
+                            android:layout_height="17dp"
+                            android:src="@drawable/ic_star_nonfill"
+                            android:layout_marginStart="-2dp"/>
+                        <ImageView
+                            android:layout_width="17dp"
+                            android:layout_height="17dp"
+                            android:src="@drawable/ic_star_nonfill"
+                            android:layout_marginStart="-2dp"/>
+                        <ImageView
+                            android:layout_width="17dp"
+                            android:layout_height="17dp"
+                            android:src="@drawable/ic_star_nonfill"
+                            android:layout_marginStart="-2dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/line"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_below="@id/intro_star"
+                        android:orientation="horizontal"
+                        android:background="#e6e6e6"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginBottom="7dp"/>
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@mipmap/ic_faborite_big"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:id="@+id/imageView6" />
+
+
+
+                    <com.example.dudco.ovs_seoulappcompetition.Views.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="쇼핑 명소로 유명한 동대문시장은 패션의 최첨단 기지로서 역할을 하고 있으며 우리나라를 방문하는 외국인 관광객들이 꼭 들르는 관광 명소이기도 하다. 원래 동대문시장은 미곡상, 어물상, 청과물상 등이 주를 이루어 1905년에 90여 개의 점포로 시작된 광장시장이 그 출발이 되었다. 6·25전쟁으로 완전히 파괴되었다가 전쟁 이후 주로 월남 피난민의 생활 터전이 되었으며 생활 수품과 군용물자, 외래품이 거래되면서 다시 시장으로서 활기를 띠기 시작했다."
+                        android:layout_below="@id/line"
+                        android:layout_alignParentStart="true"
+                        android:id="@+id/intro_info"
+                        android:textSize="13sp"/>
+
+                    <com.example.dudco.ovs_seoulappcompetition.Views.CustomTextView
+                        android:id="@+id/intro_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:font="nanumbarungothic_bold_0.ttf"
+                        android:text="동대문종합시장"
+                        android:textSize="20sp"
+                        android:textColor="@color/black"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true" />
+                </RelativeLayout>
+                <LinearLayout
+                    android:id="@+id/intro_hashtags"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+                    <com.example.dudco.ovs_seoulappcompetition.Views.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:font="nanumbarungothic_bold_0.ttf"
+                        android:textSize="20sp"
+                        android:textColor="@color/black"
+                        android:text="Hash Tags"/>
+                    <com.example.dudco.ovs_seoulappcompetition.Views.CustomFlowLayout
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/tag_form"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    </com.example.dudco.ovs_seoulappcompetition.Views.CustomFlowLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:background="@color/white"
+                    android:padding="10dp">
+
+                    <com.example.dudco.ovs_seoulappcompetition.Views.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:font="nanumbarungothic_bold_0.ttf"
+                        android:textSize="20sp"
+                        android:textColor="@color/black"
+                        android:text="Introduction"
+                        android:layout_marginBottom="8dp"/>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <com.example.dudco.ovs_seoulappcompetition.Views.CustomTextView
+                            android:id="@+id/intro_location"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:font="nanumbarungothic_0.ttf"
+                            android:textSize="13sp"
+                            android:text="서울특별시 종로구 종로 266 동대문 종합시장"/>
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/ic_tab_loaction_se"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentBottom="true"/>
+                    </RelativeLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="#e6e6e6"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"/>
+
+                    <RelativeLayout
+                        android:id="@+id/call_form"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <com.example.dudco.ovs_seoulappcompetition.Views.CustomTextView
+                            android:id="@+id/call"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:font="nanumbarungothic_0.ttf"
+                            android:textSize="13sp"
+                            android:text="010-2262-0111"/>
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@mipmap/ic_cell"
+                            android:layout_alignParentEnd="true"/>
+                    </RelativeLayout>
+                </LinearLayout>
+                <com.example.dudco.ovs_seoulappcompetition.Views.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Review"
+                    app:font="nanumbarungothic_bold_0.ttf"
+                    android:textSize="25sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="10dp"
+                    />
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/review_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </android.support.v7.widget.RecyclerView>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingbtn"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_action_plus"
+        app:backgroundTint="@color/colorPrimary"
+        app:borderWidth="0dp"
+        android:layout_gravity="end|bottom"/>
+</android.support.design.widget.CoordinatorLayout>

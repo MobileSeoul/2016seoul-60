@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FC6C78</color>
+    <color name="colorPrimaryDark">#c95660</color>
+    <color name="colorAccent">#FFFFFF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="backgroundShadow">#6b6c71</color>
+    <color name="catebackgroundShadow">#cecfd1</color>
+    <color name="gradientStart">#fe6b75</color>
+    <color name="gradientEnd">#f7864b</color>
+    <color name="grey">#535353</color>
+    <color name="faborite">#F2283F</color>
+    <color name="cardview_subTItle">#c1c1c1</color>
+    <color name="gold">#ffb74d</color>
+    <color name="silber">#b0bec5</color>
+    <color name="bronze">#bcaaa4</color>
+    <color name="gold_subTitle">#a87a39</color>
+    <color name="silber_subTitle">#767f83</color>
+    <color name="bronze_subtitle">#7e726f</color>
+    <color name="profile_tab_color">#969696</color>
+    <color name="gradientStartF">#fffe6b75</color>
+    <color name="gradientEndF">#fff7864b</color>
+</resources>

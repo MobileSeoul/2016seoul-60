@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="2">
+
+    <com.example.dudco.ovs_seoulappcompetition.Views.CustomCardView
+        android:id="@+id/card1"
+        android:layout_width="0dp"
+        android:layout_height="225dp"
+        android:layout_weight="1"
+        app:mycard_title="경복궁"
+        app:mycard_sub_title="Gyeongbokgung Palace"
+        app:mycard_stars="5"
+        app:mycard_forum_text="256"
+        app:mycard_favorite_text="2487"
+        app:mycard_image="@drawable/card_image"
+        android:padding="7dp"
+        android:gravity="center"/>
+    <com.example.dudco.ovs_seoulappcompetition.Views.CustomCardView
+        android:layout_width="0dp"
+        android:id="@+id/card2"
+
+        android:layout_height="225dp"
+        android:layout_weight="1"
+        app:mycard_title="경복궁"
+        app:mycard_sub_title="Gyeongbokgung Palace"
+        app:mycard_stars="5"
+        app:mycard_forum_text="256"
+        app:mycard_favorite_text="2487"
+        app:mycard_image="@drawable/card_image"
+        android:padding="7dp"
+        android:gravity="center"/>
+</LinearLayout>

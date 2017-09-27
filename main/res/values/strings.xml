@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Oh! Visit Seoul</string>
+    <string name="findpass">비밀번호 찾기</string>
+    <string name="auth">회원가입</string>
+    <string name="login">로그인</string>
+    <string name="pass">비밀번호</string>
+    <string name="email">이메일</string>
+    <string name="facebook_app_id">536311256578173</string>
+    <string name="oh_visit_seoul">Oh! Visit Seoul</string>
+    <string name="search">search</string>
+    <string name="register">회원가입</string>
+    <string name="tab_profile">프로파일</string>
+    <string name="tab_map">지도</string>
+    <string name="tab_category">카테고리</string>
+    <string name="tab_main">메인으로</string>
+    <string name="reg_name">이름</string>
+</resources>

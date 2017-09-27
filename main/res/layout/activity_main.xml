@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/coordinator">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar_main"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_search_white_36dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="8dp"/>
+
+                <com.example.dudco.ovs_seoulappcompetition.Views.CustomTextView
+                    android:id="@+id/bar_text_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/oh_visit_seoul"
+                    app:font="somatic-rounded.otf"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    android:textColor="@color/white"
+                    android:paddingTop="6dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true" />
+            </RelativeLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize">
+
+    </android.support.v4.view.ViewPager>
+
+    <!--tab-->
+    <LinearLayout
+        android:id="@+id/main_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        app:layout_behavior=".Behavior.BottomTabBehavior">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            android:background="@color/white">
+
+            <android.support.v4.widget.Space
+                android:id="@+id/main_tab_margin"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/tab_indicator_shape">
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:id="@+id/main_tab_home"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="?attr/selectableItemBackground"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_tab_home"
+                    android:layout_marginBottom="4dp"/>
+                <com.example.dudco.ovs_seoulappcompetition.Views.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/tab_main"
+                    android:textColor="@color/grey"
+                    android:textSize="12sp"
+                    app:font="nanumbarungothic_0.ttf"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/main_tab_category"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="?attr/selectableItemBackground"
+                android:gravity="center"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_tab_category"
+                    android:layout_marginBottom="4dp"
+                    android:id="@+id/imageView4" />
+
+                <com.example.dudco.ovs_seoulappcompetition.Views.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/tab_category"
+                    android:textColor="@color/grey"
+                    android:textSize="12sp"
+                    app:font="nanumbarungothic_0.ttf"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/main_tab_location"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="?attr/selectableItemBackground"
+                android:gravity="center"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_tab_loaction"
+                    android:layout_marginBottom="4dp"
+                    android:id="@+id/imageView" />
+
+                <com.example.dudco.ovs_seoulappcompetition.Views.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/tab_map"
+                    android:textColor="@color/grey"
+                    android:textSize="12sp"
+                    app:font="nanumbarungothic_0.ttf"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/main_tab_user"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="?attr/selectableItemBackground"
+                android:gravity="center"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_tab_user"
+                    android:layout_marginBottom="4dp"/>
+                <com.example.dudco.ovs_seoulappcompetition.Views.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/tab_profile"
+                    android:textColor="@color/grey"
+                    android:textSize="12sp"
+                    app:font="nanumbarungothic_0.ttf"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

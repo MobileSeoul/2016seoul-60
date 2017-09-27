@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomTextView">
+        <attr name="font" format="string"/>
+    </declare-styleable>
+    <declare-styleable name="CustomCardView">
+        <attr name="mycard_title" format="reference|string"/>
+        <attr name="mycard_sub_title" format="reference|string"/>
+        <attr name="mycard_stars" format="integer"/>
+        <attr name="mycard_forum_text" format="reference|string"/>
+        <attr name="mycard_favorite_text" format="reference|string"/>
+        <attr name="mycard_image" format="reference|integer"/>
+    </declare-styleable>
+    <declare-styleable name="CategoryView">
+        <attr name="category_faborite_num" format="reference|string"/>
+        <attr name="category_title" format="reference|string"/>
+        <attr name="category_visitor_num" format="reference|string"/>
+        <attr name="category_bg" format="integer|reference"/>
+        <attr name="category_subtitle" format="reference|string"/>
+    </declare-styleable>
+    <declare-styleable name="CustomDetailCardView">
+        <attr name="category_d_title" format="reference|string"/>
+        <attr name="category_d_bg" format="integer|reference"/>
+        <attr name="category_d_subtitle" format="reference|string"/>
+        <attr name="category_d_stars" format="reference|string"/>
+    </declare-styleable>
+    <declare-styleable name="CustomProfileCardView">
+        <attr name="procard_image" format="reference|integer"/>
+        <attr name="procard_title" format="string|reference"/>
+        <attr name="procard_subtitle" format="string|reference"/>
+        <attr name="procard_starsnum" format="integer|reference"/>
+        <attr name="procard_bgcolor" format="integer|reference"/>
+        <attr name="rank" format="integer|reference"/>
+    </declare-styleable>
+</resources>
